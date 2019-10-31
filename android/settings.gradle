@@ -1,3 +1,5 @@
 rootProject.name = 'AwesomeHelloWorld'
+include ':@thalesness_react-native-canvas-scratch-card'
+project(':@thalesness_react-native-canvas-scratch-card').projectDir = new File(rootProject.projectDir, '../node_modules/@thalesness/react-native-canvas-scratch-card/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'

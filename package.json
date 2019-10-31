@@ -7,9 +7,13 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "reconnect": "adb reverse tcp:8081 tcp:8081 && yarn refresh",
+    "menu": "adb shell input keyevent 82",
+    "refresh": "adb shell input text \"RR\""
   },
   "dependencies": {
+    "@thalesness/react-native-canvas-scratch-card": "^0.0.6",
     "react": "16.9.0",
     "react-native": "0.61.3"
   },
