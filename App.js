@@ -27,9 +27,9 @@ const App: () => React$Node = () => {
       <StatusBar barStyle="dark-content" />
       <ScrollView>
         <Text style={styles.sectionTitle}>{'React Native Canvas Scratch Card Demo'}</Text>
-        <View style={{height: 350}}>
+        <View style={{height: 450}}>
           <ScratchCard strokeWidth={40} fillColor={"#FFFF00"} bgImage={{
-            filename: "bulb.png",
+            filename: "mbag.jpg",
             directory: "",
           }} />
         </View>
