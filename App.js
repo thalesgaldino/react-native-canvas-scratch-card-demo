@@ -8,20 +8,15 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
   StatusBar,
+  Text,
+  ScrollView,
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 import { ScratchCard } from "@thalesness/react-native-canvas-scratch-card";
@@ -30,16 +25,15 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <ScratchCard strokeWidth={40} fillColor={"#FF0000"} bgImage={{
+      <ScrollView>
+        <Text style={styles.sectionTitle}>{'React Native Canvas Scratch Card Demo'}</Text>
+        <View style={{height: 350}}>
+          <ScratchCard strokeWidth={40} fillColor={"#FFFF00"} bgImage={{
             filename: "bulb.png",
             directory: "",
           }} />
-        </ScrollView>
-      </SafeAreaView>
+        </View>
+      </ScrollView>
     </>
   );
 };
@@ -64,6 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '600',
     color: Colors.black,
+    padding: 25,
   },
   sectionDescription: {
     marginTop: 8,
