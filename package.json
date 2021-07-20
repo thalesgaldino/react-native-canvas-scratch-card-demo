@@ -15,7 +15,7 @@
   "dependencies": {
     "@thalesness/react-native-canvas-scratch-card": "^0.0.6",
     "react": "16.9.0",
-    "react-native": "0.61.3"
+    "react-native": "0.62.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
